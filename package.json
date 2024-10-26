@@ -1,17 +1,27 @@
 {
-  "name": "structuremanage",
-  "version": "1.0.0",
+  "name": "structure-manage",
+  "version": "0.0.2",
   "description": "",
   "main": "./build/index.js",
-  "types": "./build/index.d.ts",
+  "types": "./build/types/index.d.ts",
   "scripts": {
     "build": "tsc",
     "start": "node ./build/index.js",
     "dev": "ts-node ./src/index.ts"
   },
+  "files": [
+    "./build/**/*" 
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azulcolor/structureManage"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Pastelin",
   "license": "ISC",
+  "publishConfig": {
+  "access": "public"
+  },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@types/node": "^22.8.0",

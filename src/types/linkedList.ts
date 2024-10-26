@@ -1,4 +1,14 @@
-import ListNode from "../linked-list/ListNode"
 
-export type linkedListValue = number | string | boolean
-export type Next = ListNode | null
+export type linkedListValue = number | string | boolean | linkedListValue[] | Object
+
+export interface ListNodeInterface {
+    value: linkedListValue
+    next: ListNodeInterface | null 
+}
+
+export interface LinkedListInterface {
+    head: ListNodeInterface | null
+    append(values: linkedListValue): void
+    appendList(values: Array<linkedListValue[]>): void 
+    graphic(): string
+}
